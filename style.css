@@ -1,0 +1,43 @@
+/* RESET */
+* {
+    margin: 0;   
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* GENERAL */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%
+}
+
+
+
+
+
+/* MAIN */
+
+
+
+
+
+
+
+/*  FOOTER */
+
+.footer-container {
+    height: 80px;
+    padding: 10px;
+    background-color: rgb(47, 47, 47);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white
+}
