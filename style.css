@@ -28,6 +28,8 @@ img {
 
 /* MAIN */
 
+/*  GENERAL MAIN */
+
 .main-container {
     display: flex;
     width: 100vw;
@@ -43,6 +45,8 @@ img {
 .header-main-and-playlist-page {
     overflow: auto;
 }
+
+/*  HEADER MAIN */
 
 .header-main {
     width: calc(100vw - 200px);
@@ -62,6 +66,8 @@ img {
     color: white;
     border-radius: 20px;
 }
+
+/*  PLAYLIST PAGE */
 
 .playlists-page {
     width: calc(100vw - 200px);
@@ -133,13 +139,92 @@ img {
 }
 
 
+/*  HOME PAGE CONTAINER */
 
+.logo-container {
+    width: 140px;
+    height: 50px;
+    margin: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.logo-container > :first-child {
+    display: none;
+}
 
+.home-section div {
+    display: flex;
+}
 
+.home-section h5 {
+    color: rgb(169, 169, 169);
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
 
+.home-section i {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
 
+.crea-playlist {
+    display: flex;
+    margin-left: 10px;
+}
 
+.crea-playlist h4 {
+    color: rgb(169, 169, 169);
+    margin-left: 5px;
+}
+
+.nome-playlist {
+    color: rgb(169, 169, 169);
+}
+
+.nome-playlist h5 {
+    margin: 10px;
+}
+
+.footer-home-section {
+    position: relative;
+}
+
+.installa-app-flex {
+    display: flex;
+    position: absolute;
+    top: 200px;
+}
+
+.installa-app-flex h5 {
+    color: rgb(169, 169, 169);
+    margin-left: 5px;
+}
+
+.installa-app-flex i {
+    margin-left: 10px;
+}
+
+hr {
+    position: absolute;
+    top: 225px;
+    background-color: rgb(169, 169, 169);
+    margin-left: 10px;
+    width: 170px;
+}
+
+.account-flex {
+    display: flex;
+    position: absolute;
+    top: 240px;
+    color: rgb(169, 169, 169);
+    margin-left: 10px;
+}
+
+.account-flex h4 {
+    margin-left: 5px;
+}
 
 
 /*  FOOTER */
