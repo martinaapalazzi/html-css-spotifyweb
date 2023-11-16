@@ -40,6 +40,10 @@ img {
     background-color: black;
 }
 
+.header-main-and-playlist-page {
+    overflow: auto;
+}
+
 .header-main {
     width: calc(100vw - 200px);
     height: 80px;
@@ -95,13 +99,21 @@ img {
 
 .recently-played-container h2 {
     color: white;
-    margin: 25px 0px;
+    margin: 25px 0px 5px;
+}
+
+.recently-played-container p {
+    color: rgb(169, 169, 169);
+    margin-bottom: 20px;
+}
+
+.albums-flex {
+    display: flex;
 }
 
 .recently-played-albums {
     width: calc(( 100% / 6 ) - 15px );
-    display: flex;
-    flex-wrap: wrap;
+    margin-right: 15px;
 }
 
 .recently-played-albums h4 {
@@ -113,6 +125,11 @@ img {
 .recently-played-albums h6 {
     color: rgb(169, 169, 169);
     text-align: center;
+}
+
+.round-img {
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 
