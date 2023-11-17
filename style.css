@@ -76,23 +76,14 @@ img {
     width: calc(100vw - 200px);
     height: 100%;
     padding: 100px 25px;
-    background-color: rgb(24, 31, 49);
-    
-}
-
-.categories-container-flex {
-    display: flex;
-    justify-content: center;
-}
-
-.categories-container {
-    width: 70%;
+    background-color: rgb(24, 31, 49);  
 }
 
 .categories {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
+    padding: 0px 20px;
 }
 
 .categories a {
@@ -146,12 +137,10 @@ img {
 /*  HOME PAGE CONTAINER */
 
 .logo-container {
-    width: 140px;
+    width: 150px;
     height: 50px;
     margin: 15px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .logo-container > :first-child {
@@ -286,7 +275,7 @@ hr {
 
 .time-line-song {
     text-align: center;
-    width: 250px;
+    width: 200px;
     height: 5px;
     background-color: lightslategray;
     border-radius: 5px;
@@ -316,7 +305,10 @@ hr {
 .right-footer-container {
     display: flex;
     align-items: center;
+}
 
+.icons-margin {
+    display: flex;
 }
 
 .volume-line {
@@ -331,6 +323,7 @@ hr {
 .volume-line div {
     width: 30%;
     height: 100%;
+    border-radius: 5px;
     background-color: white;
     position: absolute;
 }
@@ -352,6 +345,28 @@ hr {
 
         /*  PLAYLIST PAGE */
 
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+        }
+
+        .categories a {
+            padding-bottom: 20px;
+        }
+
+        .albums-flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .recently-played-albums {
+            width: calc(( 100% / 4 ) - 15px );
+            margin-right: 15px;
+        }
+
 
         /*  HOME PAGE CONTAINER */
 
@@ -368,7 +383,7 @@ hr {
 
 /* MOBILE MEDIA QUERY */
 @media screen and (max-width: 600px) {
-    
+
     /* MAIN QUERY */
 
     
@@ -380,8 +395,49 @@ hr {
 
         /*  PLAYLIST PAGE */
 
+        .albums-flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .recently-played-albums {
+            width: calc(( 100% / 2 ) - 15px );
+            margin-right: 15px;
+        }
+
 
         /*  HOME PAGE CONTAINER */
+
+        .home-page-spotify {
+            width: 50px;
+        }
+
+        .logo-container {
+            width: 50px;
+            height: 50px;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        .logo-container > :first-child {
+            display: block;
+        }
+
+        .no-logo-mobile  {
+            display: none;
+        }
+
+        .home-section h5  {
+            display: none;
+        }
+
+        .playlist-section {
+            display: none;
+        }
+
+        .footer-home-section {
+            display: none;
+        }
 
 
 
