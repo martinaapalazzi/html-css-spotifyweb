@@ -378,6 +378,16 @@ hr {
 
     /*  FOOTER */
 
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icons-margin-media-query {
+        display: block;
+        margin-left: 8px;
+    }
+
 }
 
 
