@@ -292,15 +292,15 @@ hr {
     position: relative;
 }
 
-.minutes-listened div {
+.minutes-listened .pallina {
     display: none;
-    width: 13px;
-    height: 13px;
+    width: 10px;
+    height: 10px;
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    right: -28px;
-
+    bottom: -2.5px;
+    right: -20px;
 }
 
 
@@ -346,7 +346,7 @@ hr {
         /*  HEADER MAIN  */
 
 
-        /*  PLAYLIST PAGE */
+        /*  PLAYLIST PAGE  <div class="green-line"></div> */
 
         .categories {
             display: flex;
@@ -356,8 +356,8 @@ hr {
             padding: 0px 20px;
         }
 
-        .categories a {
-            padding-bottom: 20px;
+        .categories div {
+            padding: 4px;
         }
 
         .albums-flex {
