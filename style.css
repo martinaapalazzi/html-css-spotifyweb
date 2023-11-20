@@ -101,13 +101,6 @@ img {
     color: white;
 }
 
-.green-line {
-    width: 30px;
-    height: 3px;
-    background-color: rgb(61, 255, 47);
-    margin-left: 30px;
-}
-
 .recently-played-container h2 {
     color: white;
     margin: 25px 0px 20px;
@@ -125,6 +118,35 @@ img {
 .recently-played-albums {
     width: calc(( 100% / 6 ) - 15px );
     margin-right: 15px;
+}
+
+.card-img {
+    position: relative;
+}
+
+.card-img i {
+    color: white;
+    font-size: 70px;
+    top: 20%;
+    left: 20%;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;     
+    display: none;  
+}
+
+.recently-played-albums:hover .overlay {
+    display: block;
+}
+
+.recently-played-albums:hover .card-img i {
+    position: absolute;
 }
 
 .recently-played-albums h4 {
@@ -286,6 +308,18 @@ hr {
     padding: 5px;
 }
 
+.song-container p:hover {
+    text-decoration: underline;
+}
+
+.icons-margin i {
+    color: rgb(169, 169, 169);
+}
+
+.icons-margin i:hover {
+    color: white;
+}
+
 .middle-footer-container {
     width: 40%;
     text-align: center;
@@ -293,6 +327,10 @@ hr {
 
 .middle-footer-container i {
     margin-right: 10px;
+}
+
+.play-button:hover {
+    font-size: larger;
 }
 
 .track-section {
@@ -311,7 +349,6 @@ hr {
     height: 5px;
     background-color: lightslategray;
     border-radius: 5px;
-    
 }
 
 .minutes-listened {
@@ -320,6 +357,14 @@ hr {
     border-radius: 5px;
     background-color: white;
     position: relative;
+}
+
+.time-line-song:hover .minutes-listened {
+    background-color: greenyellow;
+}
+
+.time-line-song:hover .minutes-listened .pallina {
+    display: block;
 }
 
 .minutes-listened .pallina {
@@ -332,7 +377,6 @@ hr {
     bottom: -2.5px;
     right: -20px;
 }
-
 
 .right-footer-container {
     width: 20%;
@@ -353,7 +397,7 @@ hr {
     position: relative;
 }
 
-.volume-line div {
+.volume {
     width: 30%;
     height: 100%;
     border-radius: 5px;
@@ -361,7 +405,9 @@ hr {
     position: absolute;
 }
 
-
+.volume-line:hover .volume {
+    background-color: greenyellow;
+}
 
 
 /* TABLET MEDIA QUERY */
