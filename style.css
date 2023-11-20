@@ -70,6 +70,11 @@ img {
     border-radius: 20px;
 }
 
+.header-main a:hover {
+    padding: 12px 35px;
+    border-radius: 30px;
+}
+
 /*  PLAYLIST PAGE height: calc(100% - 80px) */
 
 .playlists-page {
@@ -89,6 +94,11 @@ img {
 .categories a {
     text-decoration: none;
     color: rgb(169, 169, 169);
+}
+
+.categories a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 .green-line {
@@ -166,6 +176,20 @@ img {
     margin-bottom: 10px;
 }
 
+.home-section h5:hover {
+    color: white;
+}
+
+.playlist-section {
+    height: 40%;
+    overflow: auto;
+}
+
+.playlist-section h3 {
+    margin: 20px 0px 10px 10px;
+    color: white;
+}
+
 .crea-playlist {
     display: flex;
     margin-left: 10px;
@@ -184,8 +208,10 @@ img {
     margin: 10px;
 }
 
-.footer-home-section {
-    
+.crea-playlist h4:hover,
+.nome-playlist h5:hover,
+.installa-app-flex h5:hover {
+    color: white;
 }
 
 .installa-app-flex {
